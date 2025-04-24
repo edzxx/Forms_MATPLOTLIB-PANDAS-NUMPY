@@ -147,7 +147,7 @@ mediana = np.median(np_vendas)
 desvio_padrao = np.std(np_vendas)
 
 estatisticas = tk.Label(janela, text=f"Maior: {maior}\nMenor: {menor}\nMedia: {media}\nMediana: {mediana}\nDesvio Padrao: {desvio_padrao}")
-estatisticas.pack(side=tk.RIGHT, padx=10)
+estatisticas.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=10)
 
 janela.mainloop()
 
